@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for directory in lessons/*; do
+  cd $directory
+  ls Makefile 1>/dev/null 2>/dev/null && make all
+  cd ../..
+done
